@@ -7,12 +7,12 @@
 # Running the Project
   # Data Preprocessing:
   
-  The data preprocessing script handles several tasks:
+The data preprocessing script handles several tasks:
 
-     - Dropping non-essential ID columns (EIN, NAME).
-     - Replacing rare categorical values with "Other".
-     - One-hot encoding the categorical variables.
-     - Splitting the data into features (X) and target (y), then further splitting it into training and testing sets.
+- Dropping non-essential ID columns (EIN, NAME).
+- Replacing rare categorical values with "Other".
+- One-hot encoding the categorical variables.
+- Splitting the data into features (X) and target (y), then further splitting it into training and testing sets.
        
   # Model Definition:
     
