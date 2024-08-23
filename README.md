@@ -7,40 +7,40 @@
 # Running the Project
   # Data Preprocessing:
   
-    The data preprocessing script handles several tasks:
+  The data preprocessing script handles several tasks:
 
-       - Dropping non-essential ID columns (EIN, NAME).
-       - Replacing rare categorical values with "Other".
-       - One-hot encoding the categorical variables.
-       - Splitting the data into features (X) and target (y), then further splitting it into training and testing sets.
+     - Dropping non-essential ID columns (EIN, NAME).
+     - Replacing rare categorical values with "Other".
+     - One-hot encoding the categorical variables.
+     - Splitting the data into features (X) and target (y), then further splitting it into training and testing sets.
        
   # Model Definition:
     
-    The neural network model is built as follows:
+  The neural network model is built as follows:
 
-      - A Sequential model with an input layer matching the number of features.
-      - Two hidden layers, each using the ReLU activation function.
-      - An output layer with a sigmoid activation function, since we’re doing binary classification.
+- A Sequential model with an input layer matching the number of features.
+- Two hidden layers, each using the ReLU activation function.
+- An output layer with a sigmoid activation function, since we’re doing binary classification.
 
   # Model Compilation and Training:
 
-    The model is compiled with the Adam optimizer and the binary_crossentropy loss function. It is then trained on the training data for 100 epochs.
+  The model is compiled with the Adam optimizer and the binary_crossentropy loss function. It is then trained on the training data for 100 epochs.
 
   # Model Evaluation:
-    After training, the model is evaluated using the test data, and both the loss and accuracy metrics are printed.
+  After training, the model is evaluated using the test data, and both the loss and accuracy metrics are printed.
 
   # Model Export:
-    The trained model is saved in an HDF5 file named AlphabetSoupCharity.h5.
+  The trained model is saved in an HDF5 file named AlphabetSoupCharity.h5.
 
   # Model Optimization:
-    Several optimization strategies were employed to try and improve the model’s performance:
+  Several optimization strategies were employed to try and improve the model’s performance:
 
-      - Increasing the number of neurons in the hidden layers.
-      - Adding an extra hidden layer.
-      - Experimenting with different activation functions.
-      - Adjusting the number of training epochs.
+- Increasing the number of neurons in the hidden layers.
+- Adding an extra hidden layer.
+- Experimenting with different activation functions.
+- Adjusting the number of training epochs.
 
-    Although these optimizations didn’t push the model's accuracy past the desired 75% threshold, they provided valuable insights into the factors that influence the performance of deep learning models.
+  Although these optimizations didn’t push the model's accuracy past the desired 75% threshold, they provided valuable insights into the factors that influence the performance of deep learning models.
 
   # Summary:
   
